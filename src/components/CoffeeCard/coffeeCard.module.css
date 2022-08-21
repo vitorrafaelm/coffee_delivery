@@ -1,0 +1,120 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  width: 256px;
+  height: 310px;
+
+  background: #F3F2F2;
+  border-radius: 6px 36px;
+
+  padding: 0rem 1rem;
+}
+
+.cardContainer > .cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  position: absolute;
+  margin-top: -2rem;
+}
+
+.cardContainer > .cardHeader > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+
+  width: 81px;
+  height: 21px;
+
+  background: var(--yellow-light);
+  border-radius: 100px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 130%;
+  text-transform: uppercase;
+
+  color: var(--yellow-dark);
+
+  margin-top: 0.5rem;
+}
+
+.cardContainer > .cardBody {
+  margin-top: 8.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainer > .cardBody > h3 {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #403937;
+}
+
+.cardContainer > .cardBody > p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+
+  color: #8D8686;
+}
+
+.cardContainer .cardFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+
+.cardContainer .cardFooter div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainer .cardFooter div:first-child span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: right;
+  color: var(--base-text)
+}
+
+.cardContainer .cardFooter div:first-child p {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 130%;
+
+  text-align: right;
+
+  color: #574F4D;
+  margin-left: 0.2rem;
+}

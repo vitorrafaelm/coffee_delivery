@@ -1,0 +1,33 @@
+.bagdeContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 0.75rem;
+}
+
+.sectionContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sectionContainer > label:first-child {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+
+  color: var(----base-text);
+}
+
+.sectionContainer > label:nth-child(2) {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+
+  color: var(----base-text);
+}

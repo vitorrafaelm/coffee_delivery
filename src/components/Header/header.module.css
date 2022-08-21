@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 6.5rem;
+
+  padding: 2rem 10rem;
+
+  background-color: var(--background);
+}
+
+.header > img {
+  width: 5.3125rem;
+  height: 2.5rem;
+}
+
+.informationsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  gap: 0.75rem;
+}
+
+.informationsContainer > button:first-child {
+  display: flex;
+  align-items: center;
+
+  padding: 0.5rem;
+  background-color: var(--purple-light);
+  width: 143px;
+  height: 38px;
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.informationsContainer > button:first-child > svg {
+  width: 1.375rem;
+  height: 1.375rem;
+
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.informationsContainer > button:first-child > label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #4B2995;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+.informationsContainer > button:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem;
+  background-color: var(--yellow-light);
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
