@@ -5,12 +5,14 @@
   position: relative;
 
   width: 256px;
-  height: 310px;
+  height: 280px;
 
   background: #F3F2F2;
   border-radius: 6px 36px;
 
   padding: 0rem 1rem;
+
+  margin-top: 4rem;
 }
 
 .cardContainer > .cardHeader {
@@ -20,7 +22,7 @@
   width: 100%;
 
   position: absolute;
-  margin-top: -2rem;
+  margin-top: -14rem;
 }
 
 .cardContainer > .cardHeader > span {
@@ -49,7 +51,7 @@
 }
 
 .cardContainer > .cardBody {
-  margin-top: 8.2rem;
+  margin-top: 6rem;
 
   display: flex;
   flex-direction: column;
@@ -64,9 +66,7 @@
   font-size: 20px;
   line-height: 130%;
 
-  display: flex;
-  align-items: flex-end;
-  text-align: center;
+  padding: 0 1rem;
 
   color: #403937;
 }
@@ -78,25 +78,33 @@
   font-size: 14px;
   line-height: 130%;
   text-align: center;
+  width: 100%;
 
   color: #8D8686;
+  padding: 0rem -1rem;
 }
 
-.cardContainer .cardFooter {
+.cardContainer > .cardFooter {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-
+  width: 100%;
   margin-top: 2rem;
 }
 
-.cardContainer .cardFooter div:first-child {
+.cardFooter > .price {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin-left: 1.3rem;
 }
 
-.cardContainer .cardFooter div:first-child span {
+.cardContainer > .cardFooter > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardContainer > .cardFooter > div:first-child > span {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -106,7 +114,7 @@
   color: var(--base-text)
 }
 
-.cardContainer .cardFooter div:first-child p {
+.cardContainer > .cardFooter > div:first-child > p {
   font-family: 'Baloo 2';
   font-style: normal;
   font-weight: 800;
@@ -117,4 +125,61 @@
 
   color: #574F4D;
   margin-left: 0.2rem;
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addCoffeeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+
+  width: 72px;
+  height: 38px;
+
+  background: var(--base-button);
+  border-radius: 6px;
+}
+
+.actionsContainer > .addCoffeeContainer > button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  width: auto;
+
+  color: var(--purple);
+}
+
+.actionsContainer > .addCoffeeContainer > button:hover {
+  opacity: 0.6;
+}
+
+.chartButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  width: 38px;
+  height: 38px;
+  border: none;
+
+  background: var(--purple-dark);
+  border-radius: 6px;
+  margin-left: 0.5rem;
+}
+
+.chartButton:hover {
+  opacity: 1;
+}
+
+.actionsContainer > .addCoffeeContainer > span {
+  color: var(--base-title);
+  
 }

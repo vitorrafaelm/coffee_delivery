@@ -1,6 +1,7 @@
 import styles from './coffeeCard.module.css';
 
 import Coffee from '../../assets/Coffee.png';
+import ChartWhite from '../../assets/chartWhite.png';
 
 export function CoffeeCard(): JSX.Element {
   return (
@@ -23,13 +24,13 @@ export function CoffeeCard(): JSX.Element {
 
         <div className={styles.actionsContainer}>
           <div className={styles.addCoffeeContainer}>
-            <button className={styles.minusButton}>-</button>
+            <button>−</button>
             <span>1</span>
-            <button className={styles.minusButton}>-</button>
+            <button>+</button>
           </div>
 
           <button className={styles.chartButton}>
-            <img src="" alt="" />
+            <img src={ChartWhite} alt="" />
           </button>
         </div>
       </div>
