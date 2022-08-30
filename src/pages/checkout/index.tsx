@@ -11,7 +11,7 @@ export function Checkout(): JSX.Element {
             <Header />
             <div className={styles.container}>
                 <div className={styles.gridMainContainer}>
-                    <div >
+                    <section>
                         <div>
                             <h1>Complete o seu pedido</h1>
                         </div>
@@ -54,12 +54,14 @@ export function Checkout(): JSX.Element {
                                 
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
-                            <h1>Cafes selecionados</h1>
+                    </section>
+                    <section style={styles.payment}>
+                        <h1>Cafes selecionados</h1>
+
+                        <div className="card_checkout">
+                            
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </>
