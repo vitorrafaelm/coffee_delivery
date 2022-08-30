@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+
+    padding: 2rem 10rem;
+}
+
+.gridMainContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 6fr 4fr;
+    gap: 2rem;
+}
+
+.addressCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+
+    width: 640px;
+    height: 372px;
+
+    background: #F3F2F2;
+    border-radius: 6px;
+
+    margin-top: 0.975rem;
+}
+
+.addressCard > .header {
+    display: flex;
+    align-items: flex-end;
+}
+
+.addressCard > .header > h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+
+    margin-left: 0.5rem;
+}
+
+.addressCard > p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+
+    margin-left: 2rem;
+}
+
+.gridFormContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% auto 1fr;
+    row-gap: 1rem;
+    margin-top: 2rem;
+    grid-template-areas: 
+        "cep cep cep"
+        "street street street"
+        "number complement complement"
+        "neighboohood city uf"
+    ;
+}
+
+.item_a {
+    grid-area: cep;
+}
+
+.item_b {
+    grid-area: street;
+}
+
+.item_c {
+    grid-area: number;
+}
+
+.item_d {
+    grid-area: complement;
+}
+
+.item_e {
+    grid-area: neighboohood;
+}
+
+.item_f {
+    grid-area: city;
+}
+
+.item_g {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: uf;
+}
+
+.item_g > input {
+    margin-left: 2rem;
+}

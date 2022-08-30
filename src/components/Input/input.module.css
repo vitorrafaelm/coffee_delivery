@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+}
+
+.inputMain {
+    padding: 12px;
+    gap: 4px;
+
+    width: 200px;
+    height: 42px;
+    background: #EEEDED;
+
+    border: 1px solid #E6E5E5;
+    border-radius: 4px;
+}
