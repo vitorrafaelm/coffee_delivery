@@ -2,6 +2,11 @@ import { Header } from '../../components/Header';
 import styles from './checkout.module.css';
 
 import Pin from '../../assets/pin-bold.svg';
+import DolarPurple from '../../assets/dolar_purple.svg';
+import CreditCardIcon from '../../assets/credit_card.svg';
+import DebitCard from '../../assets/debit_card.svg';
+import Money from '../../assets/money.svg';
+
 import { Input } from '../../components/Input';
 import { CardCoffeeCheckout } from '../../components/CardCoffeeCheckout';
 
@@ -50,6 +55,31 @@ export function Checkout(): JSX.Element {
                                 <div className={styles.item_g}>
                                     <Input styleContainer={{ display: "flex", justifyContent: "flex-end"}} placeholder='UF' name='cep' id='cep' width100={60} />
                                 </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.CardPaymentMethod}>
+                            <div className={styles.informations}>
+                                <img src={DolarPurple} alt="" />
+                                <div>
+                                    <h1>Pagamento</h1>
+                                    <p>O pagamento é feito na entrega. Escolha a forma que deseja pagar</p>
+                                </div>
+                            </div>
+
+                            <div className={styles.buttonsContainer}>
+                                <button>
+                                    <img src={CreditCardIcon} alt="Credit Card" />
+                                    CARTÃO DE CRÉDITO
+                                </button>
+                                <button>
+                                    <img src={DebitCard} alt="Debit Card" />
+                                    CARTÃO DE DÉBITO
+                                </button>
+                                <button>
+                                    <img src={Money} alt="Money" />
+                                    DINHEIRO
+                                </button>
                             </div>
                         </div>
                     </section>

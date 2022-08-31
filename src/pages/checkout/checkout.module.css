@@ -1,128 +1,210 @@
 .container {
-    display: flex;
-    padding: 2rem 10rem;
+  display: flex;
+  padding: 2rem 10rem;
 }
 
 .gridMainContainer {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 6fr 4fr;
-    gap: 2rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 6fr 4fr;
+  gap: 2rem;
 }
 
 .gridMainContainer > section h1:first-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 130%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
 }
 
 .addressCard {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
 
-    width: 640px;
-    height: 372px;
+  width: 640px;
+  height: 372px;
 
-    background: #F3F2F2;
-    border-radius: 6px;
+  background: #f3f2f2;
+  border-radius: 6px;
 
-    margin-top: 0.975rem;
+  margin-top: 0.975rem;
 }
 
 .addressCard > .header {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 .addressCard > .header > h3 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
 
-    margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .addressCard > p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+
+  margin-left: 2rem;
+}
+
+.gridFormContainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 40% auto 1fr;
+  row-gap: 1rem;
+  margin-top: 2rem;
+  grid-template-areas:
+    "cep cep cep"
+    "street street street"
+    "number complement complement"
+    "neighboohood city uf";
+}
+
+.item_a {
+  grid-area: cep;
+}
+
+.item_b {
+  grid-area: street;
+}
+
+.item_c {
+  grid-area: number;
+}
+
+.item_d {
+  grid-area: complement;
+}
+
+.item_e {
+  grid-area: neighboohood;
+}
+
+.item_f {
+  grid-area: city;
+}
+
+.item_g {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: uf;
+}
+
+.item_g > input {
+  margin-left: 2rem;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+}
+
+.payment > h1 {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.cardlocalcontainer {
+  margin-top: 0.975rem;
+}
+
+.CardPaymentMethod {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 32px;
+
+  width: 640px;
+  height: 207px;
+
+  background: #f3f2f2;
+  border-radius: 6px;
+
+  margin-top: 12px;
+}
+
+.CardPaymentMethod > .informations {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.CardPaymentMethod > .informations > div > h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+
+  color: #403937;
+}
+
+.CardPaymentMethod > .informations > div > p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
 
-    margin-left: 2rem;
-}
-
-.gridFormContainer {
-    display: grid;
+    color: #574F4D;
+  }
+  
+.CardPaymentMethod > .buttonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    grid-template-columns: 40% auto 1fr;
-    row-gap: 1rem;
-    margin-top: 2rem;
-    grid-template-areas: 
-        "cep cep cep"
-        "street street street"
-        "number complement complement"
-        "neighboohood city uf"
-    ;
 }
 
-.item_a {
-    grid-area: cep;
-}
-
-.item_b {
-    grid-area: street;
-}
-
-.item_c {
-    grid-area: number;
-}
-
-.item_d {
-    grid-area: complement;
-}
-
-.item_e {
-    grid-area: neighboohood;
-}
-
-.item_f {
-    grid-area: city;
-}
-
-.item_g {
+.CardPaymentMethod > .buttonsContainer > button {
     display: flex;
-    justify-content: flex-end;
-    grid-area: uf;
-}
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
 
-.item_g > input {
-    margin-left: 2rem;
-}
+    width: 178.67px;
+    height: 51px;
 
-.payment {
-    display: flex;
-    flex-direction: column;
-    justify-self: flex-end;
-}
+    background: #EBE5F9;
 
-.payment > h1 {
-    font-family: 'Baloo 2';
+    border: 1px solid #8047F8;
+    border-radius: 6px;
+
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 130%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+
+    text-transform: uppercase;
+
+    color: #574F4D;
 }
 
-.cardlocalcontainer {
-    margin-top: 0.975rem;
+.CardPaymentMethod > .buttonsContainer > .buttonActive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
