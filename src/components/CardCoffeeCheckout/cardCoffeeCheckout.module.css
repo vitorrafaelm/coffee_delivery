@@ -5,7 +5,6 @@
   padding: 40px;
   gap: 24px;
 
-  position: absolute;
   width: 448px;
   height: 498px;
 
@@ -51,4 +50,129 @@
 .buttonContainer {
   display: flex;
   margin-top: 8px;
+}
+
+.checkoutInformations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 0.7rem;
+}
+
+.totalItems {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.totalItems > span:first-child {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #574F4D;
+}
+
+.totalItems > span:last-child {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #574F4D;
+}
+
+.deliverPrice {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.deliverPrice > span:first-child {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #574F4D;
+}
+
+.deliverPrice > span:last-child {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #574F4D;
+}
+
+.totalToPay {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.totalItems > h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #403937;
+}
+
+.buttonConfirmOrder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 8px;
+  gap: 4px;
+
+  width: 368px;
+  height: 46px;
+
+  background: #DBAC2C;
+  border-radius: 6px;
+  border: none;
+
+  margin-top: 1.2rem;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  font-stretch: 100;
 }
