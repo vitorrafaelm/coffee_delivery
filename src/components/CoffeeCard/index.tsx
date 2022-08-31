@@ -2,6 +2,8 @@ import styles from './coffeeCard.module.css';
 
 import Coffee from '../../assets/Coffee.png';
 import ChartWhite from '../../assets/chartWhite.png';
+import { ButtonChooseCoffee } from '../Buttons/ButtonChooseCoffee';
+import { ButtonDeleteCoffee } from '../Buttons/ButtonDeleteCoffee';
 
 export function CoffeeCard(): JSX.Element {
   return (
@@ -23,15 +25,8 @@ export function CoffeeCard(): JSX.Element {
         </div>
 
         <div className={styles.actionsContainer}>
-          <div className={styles.addCoffeeContainer}>
-            <button>−</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
-
-          <button className={styles.chartButton}>
-            <img src={ChartWhite} alt="" />
-          </button>
+          <ButtonChooseCoffee />
+          <ButtonDeleteCoffee Icon={ChartWhite} />
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ import styles from './checkout.module.css';
 
 import Pin from '../../assets/pin-bold.svg';
 import { Input } from '../../components/Input';
+import { CardCoffeeCheckout } from '../../components/CardCoffeeCheckout';
 
 export function Checkout(): JSX.Element {
 
@@ -12,10 +13,8 @@ export function Checkout(): JSX.Element {
             <div className={styles.container}>
                 <div className={styles.gridMainContainer}>
                     <section>
-                        <div>
-                            <h1>Complete o seu pedido</h1>
-                        </div>
-
+                        <h1>Complete o seu pedido</h1>
+                        
                         <div className={styles.addressCard}>
                             <div className={styles.header}>
                                 <img src={Pin} width={24} />
@@ -51,16 +50,16 @@ export function Checkout(): JSX.Element {
                                 <div className={styles.item_g}>
                                     <Input styleContainer={{ display: "flex", justifyContent: "flex-end"}} placeholder='UF' name='cep' id='cep' width100={60} />
                                 </div>
-                                
                             </div>
                         </div>
                     </section>
-                    <section style={styles.payment}>
+                    <section className={styles.payment}>
                         <h1>Cafes selecionados</h1>
-
-                        <div className="card_checkout">
-                            
+                        <div className={styles.cardlocalcontainer}>
+                            <CardCoffeeCheckout />
                         </div>
+                        
+                      
                     </section>
                 </div>
             </div>

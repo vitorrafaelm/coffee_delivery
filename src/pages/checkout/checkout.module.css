@@ -1,6 +1,5 @@
 .container {
     display: flex;
-
     padding: 2rem 10rem;
 }
 
@@ -9,6 +8,17 @@
     width: 100%;
     grid-template-columns: 6fr 4fr;
     gap: 2rem;
+}
+
+.gridMainContainer > section h1:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
 }
 
 .addressCard {
@@ -97,4 +107,21 @@
 
 .item_g > input {
     margin-left: 2rem;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment > h1 {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.cardlocalcontainer {
+    margin-top: 0.975rem;
 }
